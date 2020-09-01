@@ -1,0 +1,748 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: Raleway;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #736357;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Start Header Styles*/
+.waxom-header {
+  width: 100%;
+  background: url('img/slider-layout.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.waxom-navigation {
+  display: flex;
+  margin: 20px 200px;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-family: Montserrat;
+}
+
+.logo {
+  display: flex;
+}
+
+.title {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 34px;
+}
+
+.waxom-navigation-main-menu {
+  display: flex;
+  margin: 0px 10px;
+}
+
+.waxom-navigation-main-menu li {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.waxom-navigation-right-menu {
+  display: flex;
+}
+
+.waxom-navigation-right-menu li {
+  margin: 10px;
+}
+
+.waxom-navigation a {
+  color: #fff;
+}
+
+.waxom-navigation a:hover {
+  color: #c7b299;
+}
+
+
+.waxom-header-content {
+  margin-top: 180px;
+  color: #fff;
+}
+
+.waxom-header-content-second-heading {
+  font-family: 'Raleway Medium', sans-serif;
+  font-size: 36px;
+}
+
+.waxom-header-content-main-heading {
+  font-family: 'Raleway ExtraBold', sans-serif;
+  font-size: 52px;
+}
+
+.waxom-header-content-third-heading {
+  margin: 0 25%;
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 50px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #c7b299;
+  box-shadow: 0 3px #736357;
+  font-family: Raleway;
+  font-size: 14px;
+}
+
+/*Header next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-size: 38px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 40px;
+}
+
+.prev {
+  left: 40px;
+}
+/* End of header next & previous buttons */
+
+.waxom-header-dots-circles-dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 200px 2px 0;
+  background-color: #979594;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .waxom-header-dots-circles-dot:hover {
+  height: 12px;
+  width: 12px;
+  border: 2px solid #c7b299;
+  background-color: transparent;
+}
+
+/*Start Benefits Styles*/
+.waxom-benefits {
+  display: flex;
+  text-align: center;
+  margin: 50px 80px;
+  cursor: pointer;
+}
+
+.waxom-benefits-items {
+  margin: 0 10px;
+}
+
+.waxom-benefits-icon {
+  width: 30px;
+}
+
+.waxom-benefits-icon-customization {
+  width: 28px;
+}
+
+.waxom-benefits-icon-marketing {
+  width: 36px;
+}
+
+.waxom-benefits-title {
+  font-size: 18px;
+}
+
+.waxom-benefits-content {
+  font-size: 14px;
+}
+
+hr {
+  margin: 10% 35%;
+  border: none;
+  background-color: #c7c7c7;
+  height: 3px;
+}
+
+.waxom-benefits-items:hover .waxom-benefits-title {
+  color: #c7b299;
+}
+
+.waxom-benefits-items:hover hr {
+  background-color: #c7b299;
+}
+
+/*Start Realization block Styles*/
+.waxom-realization {
+  background-color: #fbfaf8;
+}
+
+.waxom-realization-content {
+  margin: 0 5%;
+  padding-top: 50px;
+}
+
+.waxom-realization-content-text {
+  margin: 2% 20%;
+}
+
+.waxom-realization-content-img {
+  display: flex;
+  justify-content: center;
+}
+
+.waxom-realization-content-img-top {
+  position: absolute;
+  width: 50%;
+}
+
+.waxom-realization-content-img-back {
+  width: 50%;
+  margin-top: 8.7%;
+}
+
+/*Start Purchase block Styles*/
+.waxom-purchase {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(45deg, #251d1b, #4a3126);
+  display: flex;
+  justify-content: space-between;
+}
+
+.waxom-purchase-paragraph {
+  margin-left: -80px;
+  opacity: 50%;
+}
+
+.waxom-purchase-text {
+  margin: 30px;
+  color: #fff;
+}
+
+.waxom-purchase-text-title {
+  display: flex;
+  font-size: 22px;
+}
+
+.waxom-purchase-text-title p {
+  font-size: 26px;
+  margin: 0 10px 0 60px;
+  opacity: 70%;
+}
+
+.waxom-purchase-button {
+  margin: 40px 100px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+  background: #c7b299;
+  box-shadow: 0 3px #736357;
+  font-size: 14px;
+  font-family: Raleway;
+}
+
+/*Start Latest Projects block Styles*/
+.waxom-projects {
+  margin: 5% 10%;
+}
+
+.waxom-projects p {
+  margin: 2% 15%;
+}
+
+.waxom-projects-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.waxom-projects-nav-item {
+  margin: 30px 5px;
+  padding: 2px 20px;
+  border: 1px solid #979594;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.waxom-projects-nav-item a {
+  color: #979594;
+  font-family: Montserrat;
+}
+
+.waxom-projects-nav-item:hover {
+  background-color: #736357;
+}
+
+.waxom-projects-nav-item:hover a {
+  color: #fff;
+}
+
+.waxom-projects-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.waxom-projects-items-block {
+  flex: 33%;
+  max-width: 32%;
+  position: relative;
+  background-color: #fbfaf8;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.waxom-projects-items-block-img {
+  width: 100%;
+}
+
+.waxom-projects-items-block h4 {
+  color: #c7b299;
+  padding-left: 30px;
+}
+
+.waxom-projects-items-block p {
+  margin: 0 0 20px 0;
+  color: #c7b299;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.waxom-projects-items-block-icons {
+  position: absolute;
+  opacity: 0;
+  top: 35%;
+  left: 40%;
+  transition: .5s ease;
+}
+
+.waxom-projects-items-block:hover {
+  background-color: #362f2d;
+  transition: .5s ease;
+}
+
+.waxom-projects-items-block:hover h4 {
+  color: #fff;
+}
+
+.waxom-projects-items-block:hover p {
+  color: #fff;
+}
+
+.waxom-projects-items-block:hover .waxom-projects-items-block-icons {
+  opacity: 1;
+}
+
+.waxom-projects-items-load-more-btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+  background: #c7b299;
+  box-shadow: 0 3px #736357;
+  font-size: 14px;
+  font-family: Raleway;
+  margin: 1% 44%;
+}
+
+/*Start Video presentation block styles*/
+.waxom-video-presentation {
+  width: 100%;
+  background: url(img/video-presentation.png) no-repeat center center/cover;
+  color: #fff;
+}
+
+.waxom-video-presentation-btn-latout {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 200px;
+}
+
+.waxom-video-presentation-btn-latout img {
+  padding-top: 15px;
+}
+
+.waxom-video-presentation h2 {
+  margin-top: 30px;
+}
+
+.waxom-video-presentation-text {
+  margin: 10px 300px;
+}
+
+.waxom-video-presentation-time {
+  font-weight: 800;
+  color: #c7b299;
+  padding-top: 20px;
+  padding-bottom: 200px;
+}
+
+/*Start For Mobile Devices block Styles*/
+.waxom-for-mobile-devises {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 10% 0;
+}
+
+.waxom-for-mobile-devises-img {
+  flex: 40%;
+}
+
+.waxom-for-mobile-devises-top-text {
+  flex: 50%;
+  text-align: left;
+  margin-top: 10%;
+}
+
+.waxom-for-mobile-devises-top-text h2 {
+  margin-bottom: 20px;
+}
+
+.waxom-for-mobile-devises-top-text p {
+  margin-bottom: 20px;
+}
+
+.waxom-for-mobile-devises-list {
+  margin-left: 50px;
+  margin-right: -50px;
+}
+
+.waxom-for-mobile-devises-list p {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.waxom-for-mobile-devises-list img {
+  vertical-align: middle;
+  padding-right: 30px;
+}
+
+/*Start Waxom Counter block Styles*/
+.waxom-counter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(45deg, #251d1b, #4a3126);
+  margin-top: -7px;
+}
+
+.waxom-counter-item {
+  margin: 50px;
+}
+
+.waxom-counter-item p {
+  color: #fff;
+}
+
+.waxom-counter-item-number {
+  font-size: 48px;
+}
+
+.waxom-counter-item-content {
+  font-size: 14px;
+}
+
+.waxom-counter-item hr {
+  height: 2px;
+}
+
+/*Start Recent Posts block Styles*/
+.waxom-recent-posts {
+  margin: 5% 10%;
+}
+
+.waxom-recent-posts p {
+  margin: 20px 100px;
+}
+
+.waxom-recent-posts-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.waxom-recent-posts-items {
+  flex: 33%;
+  max-width: 32%;
+  position: relative;
+  background-color: #fbfaf8;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.waxom-recent-posts-items img {
+  width: 100%;
+}
+
+.waxom-recent-posts-items h4 {
+  padding-left: 30px;
+}
+
+.waxom-recent-posts-items p {
+  margin: 0 0 20px 0;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.waxom-recent-posts-items-date {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transition: .5s ease;
+}
+
+.waxom-recent-posts-items:hover {
+  background-color: #362f2d;
+  transition: .5s ease;
+}
+
+.waxom-recent-posts-items:hover h4 {
+  color: #c7b299;
+}
+
+.waxom-recent-posts-items:hover p {
+  color: #fff;
+}
+
+.waxom-recent-posts-items .day {
+  font-size: 24px;
+  color: #fff;
+  padding: 0 5px;
+  background-color: #363636;
+  border-radius: 5px 5px 0 0;
+  top: 10%;
+  left: 10%;
+  text-align: center;
+}
+
+.waxom-recent-posts-items .month {
+  font-size: 12px;
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #252525;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.waxom-recent-posts-items:hover .day {
+  background-color: #c7b299;
+}
+
+.waxom-recent-posts-items:hover .month {
+  background-color: #a48d72;
+}
+
+.waxom-recent-posts-items a {
+  display: none;
+}
+
+.waxom-recent-posts-items:hover a {
+  display: block;
+  font-family: Raleway;
+  font-size: 14px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  color: #c7b299;
+}
+
+.waxom-recent-posts-items-prev, .waxom-recent-posts-items-next {
+  color: #c7b299;
+  padding: 2px 6px;
+  border: 1px solid #c7b299;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.waxom-recent-posts-items-prev:hover {
+  border: 1px solid #736357;
+}
+
+.waxom-recent-posts-items-next:hover {
+  border: 1px solid #736357;
+}
+
+/*Start Waxom Clients block Styles*/
+.waxom-clients {
+  background: url(img/clients-cover.png) no-repeat center center/cover;
+}
+
+.waxom-clients img {
+  max-width: 21%;
+  padding: 150px 50px;
+}
+
+/*Start Footer Styles*/
+.waxom-footer-content {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: #555555;
+  font-size: 14px;
+}
+
+.waxom-footer-content-item {
+  flex: 25%;
+  max-width: 23%;
+  padding: 50px 20px;
+}
+
+.waxom-footer-content-item-logo {
+  display: flex;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.waxom-footer-content-item-logo img {
+  flex: 30%;
+  max-width: 29%;
+}
+
+.waxom-footer-content-item-logo p {
+  flex: 70%;
+  max-width: 69%;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.waxom-footer-content-item p {
+  padding-bottom: 20px;
+}
+
+.waxom-footer-content-item a {
+  font-family: Montserrat;
+}
+
+.waxom-footer-content-header {
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.waxom-footer-content-recent-posts-item-date {
+  font-size: 12px;
+  color: #363636;
+}
+
+.waxom-footer-content-recent-posts-item p {
+  padding-bottom: 0px;
+}
+
+.waxom-footer-content-item hr {
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: #363636;
+}
+
+.waxom-footer-content-recent-posts-item:hover .waxom-footer-content-recent-posts-item-date {
+  color: #fff;
+}
+
+.waxom-footer-content-recent-posts-item:hover p {
+  color: #c7b299;
+}
+
+.waxom-footer-content-our-twitter-item-time {
+  font-size: 12px;
+  color: #363636;
+}
+
+.waxom-footer-content-our-twitter-item p {
+  padding-bottom: 0px;
+}
+
+.waxom-footer-content-our-twitter-item a {
+  color: #00bff3;
+}
+
+.waxom-footer-content-dribbble-widget-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+}
+
+.waxom-footer-content-dribbble-widget-img img {
+  flex: 50%;
+  max-width: 45%;
+  margin: 5px;
+}
+
+.waxom-footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111111;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 12px;
+}
+
+.waxom-footer-navigation-privacy {
+  display: flex;
+  margin: 30px 0 30px 70px;
+}
+
+.waxom-footer-navigation-privacy li {
+  margin-right: 5px;
+}
+
+.waxom-footer-navigation-design {
+  display: flex;
+  margin: 30px 70px 30px 0;
+}
+
+.waxom-footer-navigation-design li {
+  margin-right: 5px;
+}
